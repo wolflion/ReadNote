@@ -1,0 +1,40 @@
+Node.JS 学习路线图
+http://www.admin10000.com/document/4624.html 
+
+轻量级数据库
+firebird, sqlite
+
+8天学通mangoDB
+http://www.cnblogs.com/huangxincheng/archive/2012/02/18/2356595.html
+
+redis  也是个数据库
+
+【node.js+express+reids】
+http://cnodejs.org/topic/5067dbf501d0b801488766af
+
+
+https://github.com/maritz/nohm
+
+【redis的应用】
+http://www.cnblogs.com/happyframework/p/3197392.html
+
+【mongoDB的下载】
+https://www.mongodb.org/dl/win32/x86_64-2008plus-ssl
+
+
+【安装】
+http://jingyan.baidu.com/album/3c343ff7140c890d37796395.html?picindex=10
+报错的解决；
+http://blog.csdn.net/ldwtill/article/details/25109323
+http://zhidao.baidu.com/link?url=ayxlveXqs2mFgr0rYpgcz7qnf-JMkjMf1upBydSAZncxkx1gbJ0FWnd8kp5iX2SumIA8N7P03m-J1Os563TUGSaLmJGRezicXZsrMpTqbrS
+http://www.mamicode.com/info-detail-989649.html
+
+http://www.cnblogs.com/xiaoit/p/3867573.html
+
+http://www.cnblogs.com/mobydick/archive/2012/11/05/2755509.html
+
+hotfix kb2731284 {不是最新}
+http://stackoverflow.com/questions/30246428/hotfix-kb2731284-or-later-update-is-installed-no-need-to-zero-out-data-files
+
+http://www.tuicool.com/articles/Uf2YRfb
+
