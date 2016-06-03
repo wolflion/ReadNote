@@ -53,3 +53,19 @@
 
 ##  收获
 + 20160526阅读了本书的chap1到chap4。
+
+
+##  其它书
+###  《Wireshark数据包分析实战详解》王晓卉
+#### 第1篇 Wireshark应用篇
++ chap1 基础知识 
+	+ 用户的计算机连接到网络时，它依赖一个网络适配器(如以太网卡)和链路层驱动(如Atheros PCI-E网卡驱动)来发送和接收数据包。
+	+ 专家信息窗口可以提醒用户，在捕获文件中的网络问题和数据包的注释。
++ chap2 设置Wireshark视图
+	+ 在Wireshark中的所有配置都保存在Profile中，Profile实际是一个目录，它包含了Wireshark运行时加载的配置和支持文件。
+	+ 分析数据流过程就是将数据转换为可以理解的请求，应答，拒绝和重发等。
+	+ 关注该应用程序是否有意涉及使用非标准端口，或暗中想要尝试通过防火墙。
+	+ Wireshark设置存储在两个位置，分别是global configuration目录和personal configuration目录。
++ chap3 捕获过滤器技巧
++ c  
+
