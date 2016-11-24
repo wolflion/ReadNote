@@ -57,9 +57,65 @@
 
 #### 3.2 盒子有多大
 
+###  chap4 字体和文本
+#### 4.1 字体
++ 网页中的字体有三个来源
+	+ 用户机器中安装的字体
+	+ 保存在第三方网站的字体（Typekit和Google，可以使用link标签把它们链接到你的页面上）
+	+ 保存在web服务器上的字体（使用@font-face规则随网页一起发送给浏览器）
++ 与字体样式相关的6个属性
+	+ font-family(字体族)
+		+ 是可以继承的属性
+	+ font-size
+		+ 是可以继承的属性
+	+ font-style(字体样式)
+	+ font-weight(字体粗细)
+		+ 只有bold和normal两个值
+	+ font-variant(字体变化)
+		+ 只有small-caps和normal两个值
+	+ font(简写属性)
+		+ 规则一：必须声明font-size和font-family的值
+		+ 规则二：所有值必须按如下顺序声明
+			+ font-weight,font-style,font-variant不分先后；
+			+ 然后是font-size;
+			+ 最后是font-family。
++ **字体属性**描述一类字体的大小和外观。 **文本属性**描述对文本的处理方式。比如行高或字符间距。
+
+#### 4.2 文本属性
++ text-indent(文本缩进)
++ letter-spacing(字符间距)
++ word-spacing(单词间距)
++ text-decoration(文本装饰)
+	+ 值：underline,overline,line-through,blink,none
++ text-align(文本对齐)
+	+ 值：left,right,center,justify
++ line-height()
++ text-transform(文本转换)
+	+ 值：none,uppercase,lowercase,capitalize
++ vertical-align(垂直对齐)
+	+ 值：任意长度值以及sub,super,top,middle,bottom等。
+
+#### 4.3 Web字体大揭秘
+设定Web字体的三种方式
+	
++ 使用Google Web Fonts或Adobe的Typekit等公共字体库
++ 使用事先打包好的@font-face包
++ 使用Font Squirrel用你自己的字体生成@font-face包
+
+#### 4.3 文字版式
++ 简单的文本布局
++ 基于网格排版
++ 经典的排版练习
 
 ###  chap5 页面布局
 + 用内部DIV创建浮动的栏，用box-sizing属性代替内部DIV，也可以使用让元素行为跟表格一样的CSS3的display属性。
 
 #### 5.1 布局的基本概念
 + **多栏布局**有三种基本的实现方案：固定宽度，流动，弹性。
+
+
+###  chap6 界面组件
+###  6.1 导航菜单
+###  6.2 表单
+###  6.3 弹出层
+
