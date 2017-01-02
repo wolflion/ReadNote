@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Example 6.13</title>
+<script>
+function checkIt(phrase)
+{
+var userWord = "";
+var charOne = "";
+var charEnd = "";
+var middle = "";
+wordLength = 0;
+userWord = document.getElementById(phrase).value;
+document.getElementById('user_word').innerHTML = userWord;
+wordLength = userWord.length;
+document.getElementById('word_size').innerHTML = wordLength;
+charOne = userWord.substr(0,1);
+document.getElementById('first_char').innerHTML = charOne;
+charEnd = userWord.substr((wordLength-1),1);
+document.getElementById('last_char').innerHTML = charEnd;
+middle = userWord.substr(3,4);
+document.getElementById('the_middle').innerHTML = middle;
+}
+</script>
+</head>
+<body>
+  <h3>
+  Enter a word or a phrase:
+  </h3>
+  <p> <input type = "text" name="user_word" id="the_word"/>
+  <!-- <input type = "button" onclick = "checkIt('the_word')" value="ok"> </button> -->
+  <input type = "button" onclick = "checkIt('the_word')" value="ok"> 
+  </p>
+  <p>Word/Phrase information :<br />
+  You entered:<span id = "user_word">&nbsp;<span><br/>
+  It has this many characters: <span id = "word_size">&nbsp; </span><br/>
+  The first character is: <span id = "first_char">&nbsp; </span><br/>
+  The first character is: <span id = "last_char">&nbsp; </span><br/>
+  The 4th, 5th, 6th, and 7th characters are: <span id = "the_middle">&nbsp; </span><br/>
+</body>
+</html>
