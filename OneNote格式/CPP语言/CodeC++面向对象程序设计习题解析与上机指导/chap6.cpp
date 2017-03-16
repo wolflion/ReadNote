@@ -1,5 +1,5 @@
 /*
- * chap6 模板及其使用
+ * chap6 ģ�弰��ʹ��
  */
 
 #include <iostream>
@@ -10,13 +10,13 @@ using namespace std;
 
  
 /*6-1
- * min()函数模板，接受各种类型的三个参数，找出并输出其中最小者。
+ * min()����ģ�壬���ܸ������͵������������ҳ�������������С�ߡ�
  */
 #if 0
-template <class T>  // 类型参数T： 模板参数序列
-T min(T arg1, T arg2, T arg3) // 函数参数序列
+template <class T>  // ���Ͳ���T�� ģ����������
+T min(T arg1, T arg2, T arg3) // ������������
 {
-	T v;  // 函数体内
+	T v;  // ��������
 	if((arg1 < arg2) && (arg1 < arg3))
 	{
 		v = arg1;
@@ -37,7 +37,7 @@ void testmin()
 #endif
 
 /*6-2
- * find()为模板函数，在数组中搜索一个指定的元素。
+ * find()Ϊģ�庯����������������һ��ָ����Ԫ�ء�
  */
 #if 0
 template <class T>
@@ -60,7 +60,7 @@ void testfind()
 #endif
 
 /*6-3
- * 类模板中使用多个类型参数
+ * ��ģ����ʹ�ö������Ͳ���
  */
 #if 0
 template <class Type1,class Type2>
@@ -128,7 +128,7 @@ void testlist()
 	list<char> start('a');
 	list<char> *p, *last;
 	int i;
-	// 建立链表
+	// ��������
 	last = &start;
 	for (i=1;i<26;i++)
 	{
@@ -136,7 +136,7 @@ void testlist()
 		p->add(last);
 		last = p;
 	}
-	// 显示链表
+	// ��ʾ����
 	p = &start;
 	while(p)
 	{
