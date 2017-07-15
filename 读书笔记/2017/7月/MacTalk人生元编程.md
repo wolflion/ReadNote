@@ -36,8 +36,7 @@
 	+ *免费不等于开源，免费也不是盗版。*
 + 选择Mac
 + 开始使用Mac
-	+ 45/291
-	+ *自己在mac上试下这些功能*
+	+ *自己在mac上试下这些功能* 【完成】
 + 非同凡想 56/291
 	+ “非同凡想”（think different）
 + 怀念2007
@@ -48,6 +47,7 @@
 	+ **一门语言只有掌握得足够深入，才有机会探讨它的前途和钱途。**
 + Mac Tips
 	+ *自己在mac上试下这些功能*
+		+ 实践到17了。
 
  ###  Part2 程序员与编程 97/291
 + 并发的错觉
@@ -89,10 +89,48 @@
 		+ [Google,Google,再Google](http://wordpress.lixiaolai.com/archives/7572.html)
 		+ [如何用好Google搜索引擎](http://wwww.zhihu.com/question/20161362)
 	+ 用好工具
-		+ 
+		+ shell
+		+ 文本编辑器
+		+ IDE
+			+ Eclipse
+			+ Xcode
+			+ JetBrains（收费）
 	+ 找到你的Master
+		+ 老师能看到你自己看不到的地方
+		+ **所有领域的知识都是有体系的**，如果有这个领域的行家里手在你早期的学习阶段进行指导甚至设计练习技巧，与自己琢磨的效果是不可同日而语的。
+	+ 参与社区和技术会议
+		+ stackoverflow
+		+ github
+	+ 刻意练习
+		+ [文章](http://macshuo.com/?tag=刻意练习)
+	+ 逃离舒适区
+	+ 最后一招“见龙在田”
+		+ [在线学习编程网站](http://wwww.codecademy.com)
 + 神奇的程序员--王小波
+	+ [王小波的软件历程](http://91biji.com/social/leon/framebook/notes/note/9174)
 + Linux 的文件系统王国
+	+ `df -T -h`查看文件系统格式。
+	+ 有了文件系统（ext3)，引出**索引节点(inode)**的概念，inode由一个数据结构组成，这些字段记录了文件的几乎所有信息。用`stat`命令查看inode节点信息。单独看文件的索引节点号`ls -i`文件名。
+	+ inode存储
+		+ *数据区存放普通文件，索引节点区存放inode对象。每个inode对象的大小一般是128字节或256字节，这个数值可以在格式化的时候设定。*
+		+ `sudo tune2fs -l /dve/xvda | grep "Inode size" `
+	+ 普通文件
+		+ 具备一个唯一的inode对象
+	+ 文艺文件
+		+ 目录文件
+			+ `find ./app -type f | wc -l`
+			+ `du -sh app/`
+	+ 二逼文件
+		+ 块设备文件和字符设备文件
+		+ FIFO
+		+ 套接字
+		+ 符号链接
+	+ 硬链接
+		+ `ln sourcefile destfile` ls -i查看时两个文件的inode号是相同的。stat命令查看其Links的值变为2了。
+	+ 软链接
+		+ `ln -s sourcefile destfile` 类似于Windows系统的快捷方式，会创建新的inode。
+		+ *软链接可以创建目录的软链接，也能跨文件系统存在，在Linux系统中被大量使用。*
+		+ 一旦源文件/目录不存在了，软链接的使命也就完结了。
 
 ###  Part3 科技与人文  147/291
 + 不要做一个Hater
@@ -169,8 +207,40 @@
 
 ###  Part5 工具 229/291
 + Vim
+	+ **在不同的场景下采用最合适的工具，永远是最佳选择。**
+	+ vi是**比尔.乔希**写的，是Sun公司的联合创始人和首席科学家。
+	+ vim是**布莱姆.米勒**写的。
+	+ `:r!seq 100` 在vim打开的文本中插入一个1到100的序列
+	+ `:let i=1 | g /^/ s//\=i."."/ | let i+=1` 在当前的每一行文字前面加“序号.”
+	+ `vim :n */.java :argdo %s/apache/eclipse/ge | update` 把当前目录下（包含子文件夹）所有后缀为java的文件中apache替换为eclipse
+	+ 帮助和配置（lionel）
+		+ 帮助
+			+ `:hlep`
+		+ 配置
+			+ `.vimrc`
+			+ .vim文件夹
+	+ 概念与技巧
+		+ 概念
+			+ Buffer
+			+ Window
+			+ Tab-page
+		+ 技巧
+	+ vim插件篇 
+		+ **Pathogen**
+		+ **NERDTree**
+		+ **Command+T**
+		+ **Poweline**
+		+ **Ctags**
+		+ **taglist**
+		+ **visualmark**
 + 神兵利器--Alfred
+	+ `option+space`快捷键，需要自己安装。Alfred几乎是一切程序的入口。
 + 终极Shell
+	+ `cat /etc/shells`
+	+ 本节讲的是**zsh**，这个在OS X的电影里就有。
+	+ 别的系统安装 
+	+ 配置
+	+ 使用zsh
 
 ###  Part6 职场 263/291
 + 留不住的人才
@@ -228,4 +298,7 @@
 	+ 20170708读第2个番茄钟，从147-169/291。
 	+ 20170709读第3、4个番茄钟，从169-222/291。
 	+ 20170711读第5、6个番茄钟，从263-290/291；1-44/291。*读完Part 3、4、6的部分*
-	+ 20170711读第7个番茄钟，-130/291，Part1,2部分除了使用mac外。
+	+ 20170713读第7个番茄钟，-130/291，Part1,2部分除了使用mac外。
+	+ 20170714读第8、9个番茄钟
+		+ 130-146/291，*读完Part 1、3、4、6的部分*，也实践和记录了其中的一些[mac技巧](http://lionelshen.cn/2014/12/01/Use-Macbook.html)。
+		+ 231-262/291，Part5的部分还是需要实践，这是第9个番茄钟。
